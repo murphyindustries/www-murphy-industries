@@ -165,6 +165,10 @@
   .contact a .arrow { transition: transform 0.25s ease; }
   .contact a:hover .arrow { transform: translateX(3px); }
 
+  /* secondary (outline) button — published software */
+  .contact a.secondary { color: var(--accent); background: transparent; border-color: var(--rule); }
+  .contact a.secondary:hover { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+
   footer {
     border-top: 1px solid var(--rule);
     padding: 28px 0 40px;
@@ -221,6 +225,10 @@
         <div class="contact">
           <a href="mailto:major@murphy.industries">
             <span>major@murphy.industries</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a class="secondary" href="/brilliante">
+            <span>Brilliante Photo Viewer</span>
             <span class="arrow">&rarr;</span>
           </a>
         </div>
