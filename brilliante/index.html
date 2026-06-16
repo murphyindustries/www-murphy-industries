@@ -142,7 +142,9 @@
   .hero .gem-hero {
     width: 124px;
     height: 124px;
-    border-radius: 27px;
+    border-radius: 22%;
+    display: block;
+    object-fit: cover;
     filter: drop-shadow(0 18px 50px rgba(168, 107, 255, 0.45)) drop-shadow(0 6px 18px rgba(0, 0, 0, 0.5));
     animation: float 7s ease-in-out infinite, rise 0.8s ease both;
   }
@@ -374,7 +376,9 @@
     <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="wrap" style="display:flex; flex-direction:column; align-items:center;">
-        <svg class="gem-hero" aria-label="Brilliante app icon"><use href="#gem"/></svg>
+        <!-- Hero logo as a live Ultra HDR (gain-map) JPEG — renders in HDR on capable displays,
+             falls back to the embedded SDR base everywhere else. Corners clipped via border-radius. -->
+        <img class="gem-hero" src="/brilliante/icon-512.hdr.jpg" alt="Brilliante app icon — a live Ultra HDR image" decoding="async">
         <p class="eyebrow">For Windows 10 &amp; 11</p>
         <h1>Brilliante</h1>
         <p class="kicker">HDR Photo Viewer</p>
