@@ -1,0 +1,5 @@
+# https://murphy.industries/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://murphy.industries/sitemap.xml
